@@ -14,5 +14,10 @@ error_reporting(E_ALL);
     //Toon de JSON-array op het schemr
     echo $jsonarray;
 
-
+    //Toon aantal inwoners per land
+    echo "<br><br>";
+    foreach ($landen as $land) {
+        echo $land[0] . " heeft " . $land[2] . " miljoen inwoners.<br>";
+    }
+?>
 
