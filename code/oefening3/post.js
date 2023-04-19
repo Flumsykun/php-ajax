@@ -3,7 +3,7 @@ $("#knop").click(function(){
     //Lees de velden uit
     let vnm = $('#voornaamVeld').val();
     let anm = $('#achternaamVeld').val();
-    //Controleer of de velden zijn gevuld
+    let pna = $('#plaatsnaamVeld').val();    //Controleer of de velden zijn gevuld
     if (vnm == "")
     {
         $("#resultaat").html("Vul een voornaam in!");
@@ -11,6 +11,10 @@ $("#knop").click(function(){
     else if (anm == "")
     {
         $("#resultaat").html("Vul een achternaam in!");
+    }
+    else if (pna == "")
+    {
+        $("#resultaat").html("Vul een plaatsnaam in!");
     }
     //Als de velden zijn gevuld, vertuur de data naar de verwerkpagina
     else

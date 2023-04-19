@@ -2,6 +2,8 @@
 
     $voornaam = $_POST['voornaam'];
     $achternaam = $_POST['achternaam'];
-    echo "Hallo, " . $voornaam . " " . $achternaam;
+    $plaatsnaam = $_POST['plaatsnaam'];
 
+    echo "Hallo, " . $voornaam . " " . $achternaam . ". Je woont in " . $plaats . ".";
 
+?>
