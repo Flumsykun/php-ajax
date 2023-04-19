@@ -1,7 +1,8 @@
+
 $(document).ready(function () {
     $("#zoekknop").click(function () {
         //Lees de waarde van het titelveld uit
-        let title = $('#titel').val();
+        let title = $('#title').val();
         //Controleer of het veld is gevuld
         if (title == "") {
             $("#resultaat").html("Vul een titel in!");

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boeken Toevoegen</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Boeken toevoegen</h1>
+    <form id="toevoegenFormulier">
+        <label for="title">Titel:</label>
+        <input type="text" id="title" name="titel" required>
+        <br>
+        <label for="author">Auteur:</label>
+        <input type="text" id="author" name="auteur" required>
+        <br>
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn" required>
+        <br>
+        <input type="submit" id="toevoegen" value="toevoegen">
+    </form>
+
+    <a href="./index.html">NAAR OVERZICHT</a>
+    <div class="resultaat"></div>
+
+    <script src="toevoegen.js"></script>
+</body>
+</html>
