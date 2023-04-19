@@ -22,7 +22,12 @@ else {
 }
 
 //Lees de waarde van het titelveld uit
-$title = $_POST['title'];
+if(isset($_POST['title'])){
+    $title = $_POST['title'];
+}
+else {
+    $title = "";
+}
 
 //Maak een query
 $sql = "SELECT * FROM boeken WHERE title LIKE '%$title%'";
